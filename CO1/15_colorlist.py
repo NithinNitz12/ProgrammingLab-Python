@@ -1,0 +1,6 @@
+colorlist1 = set(['orange','green','blue','violet','pink','white'])
+print(colorlist1)
+colorlist2 = set(['white','blue','violet'])
+print(colorlist2)
+a = (colorlist1.difference(colorlist2))
+print("Difference =",a)
