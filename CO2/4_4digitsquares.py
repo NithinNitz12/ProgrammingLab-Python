@@ -1,14 +1,10 @@
-u = int(input("Enter the upper limit="))
-l = int(input("Enter the lower limit="))
-li = []
-li1 = []
-
-for x in range(l, u + 1):
-    if x % 2 == 0:
-        li.append(x)
-
-for y in li:
-    for z in range(1,y):
-          if (z*z) ==y:
-             li1.append(y)
-print(li1)
+lst=[]
+x = int(input("enter a four digit number = "))
+y = int(input("enter a four digit number = "))
+for i in range(x,y):
+   for j in range(32,100):
+       if i == j*j:
+           string = str(i)
+           if int(string[0])%2 == 0 and int(string[1])%2 == 0 and int(string[2])%2 == 0 and int(string[3])%2 == 0:
+               lst.append(i)
+print(lst)
